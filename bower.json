@@ -1,0 +1,20 @@
+{
+  "name": "site_restaurante",
+  "homepage": "https://github.com/emersonps/site_restaurante",
+  "authors": [
+    "Emerson <emersonline2007@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
