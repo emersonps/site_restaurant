@@ -3,7 +3,9 @@ var sass = require('gulp-sass');
 
  
 gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.sass').pipe(gulp.dest('./css'));
+  return gulp.src('./sass/**/*.sass')
+    .pipe(sass({outputStyle:'compressed'}).on('error', sass.logError))//comprimir os estilos css compilados
+    .pipe(gulp.dest('./css'));
 });
  
 gulp.task('watch', function () {
