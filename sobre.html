@@ -6,16 +6,19 @@
 	<title>Restaurante Frango Assado</title>
 	<link rel="stylesheet" href="css/geral.css">
 	<link rel="stylesheet" href="css/plugins.css">
+	<link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
+	<link rel="stylesheet" href="bower_components/animate.css/animate.css">
 	<link rel="stylesheet" href="css/sobre.css">
 </head>
 <body>
 	<header>
 		<div class="container">
-			<div class="logo">
+			<div class="logo wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s">
 				<a href="index.html">
 					<img src="imagens/topo-logo.png" alt="Logo topo Tag">
 				</a>
 			</div>
+
 			<div class="links">
 				<nav>
 					<ul>
@@ -25,18 +28,17 @@
 						<li><a href="contato.html">Contato</a></li>
 					</ul>
 				</nav>
-				
-				<ul class="social">	
-					<li>
-						<a href="#"><i class="fa fa-facebook"></i></a>
+
+				<ul class="social">
+					<li  class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+						<a target="_blank" href="https://www.facebook.com/restcantodofrangoassado/"><i class="fa fa-facebook"></i></a>
 					</li>
-				
-					<li>
-						<a href="#"><i class="fa fa-instagram"></i></a>
+
+
+					<li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.9s">
+						<a target="_blank" href="https://www.instagram.com/restaurantecfa/"><i class="fa fa-instagram"></i></a>
 					</li>
 				</ul>
-			</div>
-
 			</div>
 		
 			<h1>
@@ -52,7 +54,7 @@
 	<main>
 		<section class="sobre">
 			<div class="container">
-				<div class="textos">
+				<div class="textos animated fadeIn">
 					<p>
 						O <strong>Restaurante Canto do Frango Assado</strong>, localizado no coração de Autazes, oferece aos seus clientes uma seleção diária de pratos contemporâneos com sabores muito especiais. Durante toda a semana é prestigiado pelas famílias, público que aprecia um excelente e variado cardápio e serviço exemplar. 
 					</p>
@@ -77,5 +79,18 @@
 			<p>2017 Todos os Direitos Reservados</p>
 		</div>		
 	</footer>
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/wow/dist/wow.min.js"></script>
+	<script>
+		$(function(){				
+			$('.toggle').click(function(){
+				$('.layout').toggleClass('ativo');
+				$('.menu-responsivo').toggleClass('ativo');
+				$(this).toggleClass('ativo');
+			});
+			new WOW().init();
+		});
+	</script>
 </body>
 </html>

@@ -14,12 +14,17 @@
     "test",
     "tests"
   ],
-  /* bower install 'dependence' --save*/
   "dependencies": {
     "bootstrap": "^3.3.7",
     "font-awesome": "^4.7.0",
     "bootstrap-sass": "^3.3.7",
     "breakpoint-sass": "^2.7.1",
-    "sass-flex-mixin": "^1.0.3"
+    "sass-flex-mixin": "^1.0.3",
+    "imagehover.css": "*",
+    "wow": "wowjs#^1.1.2",
+    "animate.css": "^3.5.2"
+  },
+  "devDependencies": {
+    "wow": "wowjs#^1.1.2"
   }
 }

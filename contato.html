@@ -6,12 +6,14 @@
 	<title>Restaurante Frango Assado</title>
 	<link rel="stylesheet" href="css/geral.css">
 	<link rel="stylesheet" href="css/plugins.css">
+	<link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
+	<link rel="stylesheet" href="bower_components/animate.css/animate.css">
 	<link rel="stylesheet" href="css/contato.css">
 </head>
 <body>
 	<header>
 		<div class="container">
-			<div class="logo">
+			<div class="logo wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s">
 				<a href="index.html">
 					<img src="imagens/topo-logo.png" alt="Logo topo Tag">
 				</a>
@@ -28,13 +30,14 @@
 				</nav>
 
 				<ul class="social">
-					<li>
-						<a href="#"><i class="fa fa-facebook"></i></a>
+					<li  class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+						<a target="_blank" href="https://www.facebook.com/restcantodofrangoassado/"><i class="fa fa-facebook"></i></a>
 					</li>
 
-					<li>
-						<a href="#"><i class="fa fa-instagram"></i></a>
-					</li>
+
+					<li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.9s">
+							<a target="_blank" href="https://www.instagram.com/restaurantecfa/"><i class="fa fa-instagram"></i></a>
+						</li>
 				</ul>
 			</div>
 
@@ -52,7 +55,17 @@
 	</header>
 
 	<main>
-		<section class="contato">
+		<div class="contatos col-md-12" style="margin-bottom: 25px">
+			<div class="fone col-md-6 fone wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s">
+				(92) 99204-8655 / 98266-1373
+			</div>
+
+			<div class="email col-md-6 email wow slideInRight" data-wow-duration="1s" data-wow-delay="1.5s">
+				E-mail: restaurantecfa@gmail.com
+			</div>
+		</div>	
+
+		<section class="contato">			
 			<div class="container">
 				<form>
 					<div class="cols">
@@ -89,19 +102,18 @@
 					<div class="form-group">
 						<textarea placeholder="Escreva sua Mensagem"></textarea>
 					</div>
+					<p class="bg-success" style="margin-bottom: 15px"><i class="fa fa-info-circle"></i> Seu contato foi enviado com sucesso.</fa></p>
 
-					<div class="form-group">
-						<button class="botao medio"><i class="fa fa-envelope"></i> Enviar Contato</button>
-					</div>
-					
-					<p class="bg-success"><i class="fa fa-info-circle"></i> Seu contato foi enviado com sucesso.</fa></p>
-
-					<p class="bg-danger"><i class="fa fa-info-circle"></i> Preencha todos os campos obrigatórios!</p>
+					<p class="bg-danger" style="margin-bottom: 15px"><i class="fa fa-info-circle"></i> Preencha todos os campos obrigatórios!</p>
 					<!-- 
 					<p class="bg-primary"></p> 
 					<p class="bg-info"></p>
 					<p class="bg-danger"></p> 
 					-->
+
+					<div class="form-group">
+						<button class="botao medio"><i class="fa fa-envelope"></i> Enviar Contato</button>
+					</div>
 				</form>
 			</div>
 		</section>
@@ -116,5 +128,18 @@
 			<p>2017 Todos os Direitos Reservados</p>
 		</div>
 	</footer>
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/wow/dist/wow.min.js"></script>
+	<script>
+		$(function(){				
+			$('.toggle').click(function(){
+				$('.layout').toggleClass('ativo');
+				$('.menu-responsivo').toggleClass('ativo');
+				$(this).toggleClass('ativo');
+			});
+			new WOW().init();
+		});
+	</script>
 </body>
 </html>
