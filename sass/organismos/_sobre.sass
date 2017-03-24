@@ -10,5 +10,45 @@ section.sobre
 		+make-sm-column(10)
 		+make-sm-column-offset(1)
 
+		+breakpoint($tablet)
+			display: block
+			text-align: center	
+
+		.foto
+			+order(3)
+
+		[class^="icone-"]
+			width: 90px
+			height: 90px
+			background-color: $ouro
+			+border-radius(120px)
+			text-align: center
+			line-height: 90px
+			color: $branco
+			+font-size(50px)
+
+			+breakpoint($tablet)
+				display: inline-block
+				width: 75px
+				height: 75px
+				line-height: 75px //posicao vertical
+				+font-size(30px)
+				margin: 0 3px
+			
+			&.icone-smile
+				+order(1)
+
+			&.icone-spoon
+				+order(2)
+
+			&.icone-heart
+				+order(4)
+			
+			&.icone-street
+				+order(5)
 	
+
+
+
+
 
