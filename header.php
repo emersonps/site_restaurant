@@ -15,7 +15,7 @@
 		<header>
 		 	<div class="container">
 				<div class="logo wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s">
-					<a href="index.html">
+					<a href="index.php">
 						<img src="imagens/topo-logo.png" alt="Logo topo Tag">
 					</a>
 				</div>
